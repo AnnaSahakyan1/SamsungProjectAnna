@@ -1,16 +1,9 @@
 package com.example.databaseofstudents;
 
+
 public class Group {
     private int number;
     private String faculty_name;
-
-    public Group() {
-    }
-
-    Group(int number, String faculty_name){
-        this.number = number;
-        this.faculty_name = faculty_name;
-    }
 
     public int getNumber() {
         return number;
@@ -27,4 +20,13 @@ public class Group {
     public void setFaculty_name(String faculty_name) {
         this.faculty_name = faculty_name;
     }
+
+    public Group() {
+    }
+
+    Group(int number, String faculty_name) {
+        this.number = number;
+        this.faculty_name = faculty_name;
+    }
 }
+

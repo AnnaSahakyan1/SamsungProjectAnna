@@ -1,19 +1,11 @@
 package com.example.databaseofstudents;
 
 public class Student {
-    private String name, surname, patronymic_name, birthday;
+    private String name;
+    private String surname;
+    private String patronymic_name;
+    private String birthday;
     private Group group;
-
-    public Student() {
-    }
-
-    public Student(String name, String surname, String patronymic_name, String birthday, Group group) {
-        this.name = name;
-        this.surname = surname;
-        this.patronymic_name = patronymic_name;
-        this.birthday = birthday;
-        this.group = group;
-    }
 
     public String getName() {
         return name;
@@ -52,6 +44,17 @@ public class Student {
     }
 
     public void setGroup(Group group) {
+        this.group = group;
+    }
+
+    public Student() {
+    }
+
+    public Student(String name, String surname, String patronymic_name, String birthday, Group group) {
+        this.name = name;
+        this.surname = surname;
+        this.patronymic_name = patronymic_name;
+        this.birthday = birthday;
         this.group = group;
     }
 }
